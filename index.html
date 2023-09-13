@@ -76,7 +76,7 @@
             padding: 25px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         .box:hover{
             box-shadow: 8px 5px 25px rgba(0, 0, 0, 0.5);
@@ -84,15 +84,16 @@
         .box h1{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
+        .box p{
+            font-size: 1.225rem;
+            font-weight: 600;
+        }
         .footer{
             height: 100px;
         }
-        @media(max-width: 770px){
+        @media(max-width: 830px){
             .box{
                 width: 80%;
-                height: 400px;
-            }
-            .box1{
                 height: auto;
             }
             .panel button{
@@ -112,7 +113,7 @@
         <button onclick="window.location.href='index.html'" style="background-color: green; color: white;">Home</button>
         <button onclick="window.location.href='classx.html'">class X</button>
         <button onclick="window.location.href='classxii.html'">class XII</button>
-        <button onclick="window.location.href='contact.html'">Contact</button>
+        <!-- <button onclick="window.location.href='contact.html'">Contact</button> -->
     </div>
     <div class="content">
         <div class="box1 box" style="background-color: rgba(247, 5, 5,0.4);">
@@ -123,9 +124,61 @@
                 Welcome to Pioam, your ultimate study companion! Ace your exams with your expertly crafted resources and personalize guidance, paving the way of academic success. Whether you're preparing for your challenging test or seeking to enhance your knowledge, Pioam is here to support you in every step of the way. With our wide range of study materials you can prepare for exam perfectly. Join Pioam today and take your learning to the next level!! 
             </h3>
         </div>
-        <div class="box" style="background-color: rgba(250, 250, 7, 0.4);"></div>
-        <div class="box" style="background-color: rgba(166, 250, 39, 0.4);"></div>
-        <div class="box" style="background-color: rgba(238, 133, 238, 0.4);"></div>
+        <div class="box" style="background-color: rgba(250, 250, 7, 0.4);">
+            <h1>
+                Only for WB Board students
+            </h1>
+            <h3>
+                Hey there, this website is exclusively made for the students who are part of the West Bengal Goverment education system. For class 12 we only contains the Bengali, english, Geography, History, Political Sceience and Biology questions where the students mainly lags. The students from other Boards like CBSE, ICSE, Madrasa Board will have no value from here, luckily for this year only! From next year we will publish your questions too.
+            </h3>             
+        </div>
+        <div class="box" style="background-color: rgba(166, 250, 39, 0.4);">
+            <h1>
+                Contact Us
+            </h1> 
+            <ul>
+                <p>
+                    Phone number : 9432442524
+                </p>
+                <p>
+                    Whatsapp number : 9432442524
+                </p>
+                <p>
+                    Gmail id : nirjharju06@gmail.com
+                </p> 
+                <p>
+                    Instagram id : pioam2023
+                    <button onclick="window.location.href='https://instagram.com/in_search_of_peace_05?igshid=MzNlNGNkZWQ4Mg=='" style="background-color: blue; border: solid 2.5px white; color: white;">
+                        Follow
+                    </button>
+                </p>
+            </ul>
+            <!-- <h3>
+                Feel free to express your quaries and feelings!
+            </h3> -->
+        </div>
+        <div class="box" style="background-color: rgba(238, 133, 238, 0.4);">
+           <h1>
+                About us
+           </h1> 
+           <ul>
+            <p>
+                Made by : Nirjhar Das
+            </p>
+            <p>
+                Amla Matter : Studying B. Chemical Engg in Jadavpur University
+            </p>
+            <p>
+                Instagram id : in_search_of_peace_05
+                <button onclick="window.location.href='https://instagram.com/in_search_of_peace_05?igshid=MzNlNGNkZWQ4Mg=='" style="background-color: blue; border: solid 2.5px white; color: white;">
+                    Follow
+                </button>
+            </p>
+            <p>
+                Parent Company : butyne Corporation
+            </p>
+           </ul>
+        </div>
     </div>
     <div class="footer"></div>
 </body>
