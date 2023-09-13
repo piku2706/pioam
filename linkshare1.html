@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkshare</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .content{
+            width: 80%;
+            height: auto;
+            padding: 25px;
+            background-color: whitesmoke;
+            margin: 75px;
+            box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .content h3{
+            font-weight: lighter;
+        }
+        span{
+            font-weight: 600;
+        }
+        .content button{
+            height: 36px;
+            background-color: blue;
+            color: white;
+            border: solid 3px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h3>
+            To view the questions, you have to copy a massage by clicking the button and share it to a friend. <span>THE MESSAGE CONTAINS THE LINK OF THE DESIRED PAGE. </span>
+        </h3>
+        <button onclick="copyTextToClipboard()">Copy massage</button>
+    </div>
+    <script>
+        function copyTextToClipboard() {
+            var textToCopy = "pioam.blogpsot.com follow this link to get all the questions of your english subject";
+            var tempInput = document.createElement("input");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("massage copied");
+        }
+    </script>
+</body>
+</html>

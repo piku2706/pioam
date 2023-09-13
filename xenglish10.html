@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xEnglishch10</title>
+    <style>
+        /* head starts */
+        body{
+            margin: 0px;
+            background-color: whitesmoke;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background-color: greenyellow;
+            margin: 0px;
+            /* position: relative;
+            bottom: 17px; */
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-bottom: 10px;
+        }
+        .header p{
+            font-size: 3.3rem;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            display: inline-block;
+            width: 152px;
+        }
+        .header p:hover{
+           border: solid 2px black;
+        }
+        .panel{
+            height: auto;
+            width: 100%;
+            background-color: rgb(7, 240, 7);
+            padding-left: 10px;
+            padding-right: 10px;
+            position: sticky;
+            top: 0px;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .panel button{
+            background-color: transparent;
+            color: black;
+            border: none;
+            height: 55px;
+            font-size: 1rem;
+            width: auto;
+            padding: 15px;
+        }
+        .panel button:hover{
+            /* border-bottom: solid 5px green; */
+            background-color: green;
+            color: white;
+        }
+        /* head ends */
+        .content{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+        }
+        .box{
+            width: 40%;
+            height: 300px;
+            background-color: none;
+            margin-top: 75px;
+            box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .box:hover{
+            box-shadow: 8px 5px 25px rgba(0, 0, 0, 0.5);
+        }
+        .box h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .footer{
+            height: 100px;
+        }
+        @media(max-width: 770px){
+            .box{
+                width: 80%;
+                height: 400px;
+            }
+            .box1{
+                height: auto;
+            }
+            .panel button{
+                height: 45px;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>
+            English
+        </p>
+    </div>
+    <div class="panel">
+        <button onclick="window.location.href='classx.html'">Back</button>
+        <button onclick="window.location.href='xenglish1.html'">Chapter 1</button>
+        <button onclick="window.location.href='xenglish2.html'">Chapter 2</button>
+        <button onclick="window.location.href='xenglish3.html'">Chapter 3</button>
+        <button onclick="window.location.href='xenglish4.html'">Chapter 4</button>
+        <button onclick="window.location.href='xenglish5.html'">Chapter 5</button>
+        <button onclick="window.location.href='xenglish6.html'">Chapter 6</button>
+        <button onclick="window.location.href='xenglish7.html'">Chapter 7</button>
+        <button onclick="window.location.href='xenglish8.html'">Chapter 8</button>
+        <button onclick="window.location.href='xenglish9.html'">Chapter 9</button>
+        <button onclick="window.location.href='xenglish10.html'" style="background-color: green; color: white;">Chapter 10</button>
+    </div>
+</body>
+</html>
